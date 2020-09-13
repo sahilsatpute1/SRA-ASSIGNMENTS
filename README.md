@@ -15,8 +15,8 @@ b) For box blur, I have used a kernel(5x5) and applied it on image to get box bl
 c) For sharpening, I have used a kernel(5x5) and applied it on image to get sharpened image.
 
 # 3)Edge detection:
-a) For horizontal and vertical edge detection, I applied 3*3 kernels to the input image to get horizontal and vertical edge detection. 
-b) For sobel edge detection, I applied 3*3 kernels to my input image to get sobel edge detection.
+a) For horizontal and vertical edge detection, I applied 3x3 kernels to the input image to get horizontal and vertical edge detection. 
+b) For sobel edge detection, I applied 3x3 kernels to my input image to get sobel edge detection.
 c) For canny edge detection, i referred- https://towardsdatascience.com/canny-edge-detection-step-by-step-in-python-computer-vision-b49c3a2d8123 this link helped me understand canny edge detection.
 
 # 4)Morphological Transformations:
@@ -30,6 +30,6 @@ Here, I converted image from RGB tor BGR and then to HSV. Then we find pixels wi
 
 # 6) ROI:
 With trial and error i found the pixel values of the ball. Then using numpy indexing i extracted the ball portion and converted that to gray and then i found the pixels within the range 
-and then using bitwise operations i combined the roi with the original image.
+and then using bitwise operations i pasted the roi on the new position in the original image.
 link-https://docs.opencv.org/master/d3/df2/tutorial_py_basic_ops.html
 link-https://docs.opencv.org/master/d0/d86/tutorial_py_image_arithmetics.html
